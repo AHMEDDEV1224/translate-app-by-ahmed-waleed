@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Translated</title>
+</head>
+
+<body>
+    <div class="flex-container">
+
+        <div class="logo-container"> <img src="./dccl--frontend-translate-app/logo.svg" alt="" class="logo"></div>
+
+        <div class="Detect">
+            <div class="drop-down-container">
+                <label id="label-detect" for="language-detection">Detect Language</label>
+                <select class="language-detection" id="sourceLang" name="language-detection">
+                    <option value="en">English</option>
+                    <option value="fr">French</option>
+                    <option value="es">Spanish</option>
+                </select>
+            </div>
+            <div class="line-dec"></div>
+            <div class="text-container">
+                <textarea id="text" placeholder="Enter text to translate..."></textarea>
+            </div>
+            <br>
+            <div class="counter">
+                <p id="charCount">0/500</p>
+            </div>
+            <div class="button-container">
+                <div class="main-btn">
+                    <button class="Speech" id="speakSource"><img id="sound"
+                            src="./dccl--frontend-translate-app/sound_max_fill.svg" alt=""></button>
+                    <button class="copy" id="copySource"><img src="./dccl--frontend-translate-app/Copy.svg"
+                            alt=""></button>
+                </div>
+                <div class="buttons">
+                    <button class="translate" id="translateButton"><img
+                            src="./dccl--frontend-translate-app/Sort_alfa.svg" alt="">Translate</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="box-2">
+            <div class="Translated">
+                <div class="drop-down-container">
+                    <label id="label-detect" for="language-detection">Language-Trans-From</label>
+                    <select class="language-detection" id="targetLang" name="language-detection">
+                        <option value="en">English</option>
+                        <option value="fr">French</option>
+                        <option value="es">Spanish</option>
+                    </select>
+                </div>
+                <div class="line-dec"></div>
+                <div class="text-container-2">
+                    <textarea id="translatedText" placeholder="Translation will appear here..." readonly></textarea>
+                </div>
+                <div class="button-container-2">
+                    <div class="main-btn">
+                        <button class="Speech-2" id="speakTarget"><img
+                                src="./dccl--frontend-translate-app/sound_max_fill.svg" alt=""></button>
+                        <button class="copy-2" id="copyTarget"><img src="./dccl--frontend-translate-app/Copy.svg"
+                                alt=""></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js">
+
+    </script>
+</body>
+
+</html>

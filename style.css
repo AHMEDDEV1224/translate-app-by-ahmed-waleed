@@ -1,0 +1,331 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    flex: 1;
+}
+
+body {
+    background-image: url("./dccl--frontend-translate-app/hero_img.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #040711;
+}
+
+.logo {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+
+}
+
+
+.Detect {
+    width: 80vh;
+    height: 40vh;
+    background-color: #212936;
+    border-radius: 20px;
+    border-color: #4D5562;
+    border-style: solid;
+    border-width: 1.75px;
+    opacity: 0.92;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+button {
+    width: 10%;
+    height: 5vh;
+    opacity: 1;
+}
+
+
+
+.Translated {
+    width: 80.25vh;
+    height: 40vh;
+    background-color: #121826;
+    border-radius: 20px;
+    border-color: #4D5562;
+    border-style: solid;
+    border-width: 1.75px;
+    opacity: 0.9;
+}
+
+.box-2 {
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
+
+
+.copy,
+.copy-2 {
+    color: #CDD5E0;
+    background-color: #CDD5E0;
+    border-radius: 10px;
+    width: 35px;
+    height: 35px;
+    border-style: solid;
+    border-color: #CDD5E0;
+    cursor: pointer;
+
+}
+
+.Speech,
+.Speech-2 {
+    color: #CDD5E0;
+    background-color: #CDD5E0;
+    border-radius: 10px;
+    width: 35px;
+    height: 35px;
+    border-style: solid;
+    border-color: #CDD5E0;
+    cursor: pointer;
+}
+
+.translate {
+    background-color: #3662E3;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    width: 16vh;
+    font-family: "DM Sans", sans-serif;
+    color: #F9FAFB;
+    font-weight: 800;
+    cursor: pointer;
+    padding-bottom: 15px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-top: 10px;
+    margin-bottom: 3px;
+}
+
+
+
+
+
+@media screen and (min-width:1100px) {
+    .flex-container {
+        flex-direction: row;
+        position: relative;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .box-2 {
+
+        padding-left: 2vh;
+    }
+
+    .logo-container {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        position: relative;
+        left: 42%;
+    }
+
+    .logo {
+        height: 16%;
+    }
+}
+
+
+
+@media screen and (max-width:700px) {
+    .Translated {
+        width: 60vh;
+    }
+
+    .Detect {
+        width: 60vh;
+    }
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+
+}
+
+
+.buttons,
+.buttons-2 {
+    display: flex;
+    justify-content: right;
+    width: 80%;
+    height: 5vh;
+}
+
+.main-btn {
+    display: flex;
+    justify-content: left;
+    width: auto;
+}
+
+.Speech {
+    margin-right: 5px;
+}
+
+.Speech-2 {
+    margin-right: 3px;
+}
+
+.buttons-2 {
+    justify-content: left;
+}
+
+.line-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.line-dec {
+    width: 90%;
+    height: 0.15vh;
+    background-color: #4D5562;
+    position: relative;
+    left: 5%;
+}
+
+
+
+#text {
+    height: 50%;
+    width: 100%;
+    padding-bottom: 200px;
+    background: none;
+    border-style: none;
+    font-family: "DM Sans", sans-serif;
+    font-weight: bold;
+    color: #F9FAFB;
+    font-size: 25px;
+    resize: none;
+    overflow: hidden;
+    padding-left: 20px;
+}
+
+#text:focus {
+    border: none;
+    outline: none;
+
+}
+
+.text-container {
+    margin-top: 18px;
+    height: 45%;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    position: relative;
+    left: 2.5%;
+}
+
+
+.language-detection {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 600;
+    background-color: #78808e;
+    color: #F9FAFB;
+    font-size: 16px;
+    border: none;
+    transition: all 0.3s;
+    border-radius: 8px;
+    padding-left: 8px;
+    height: 50%;
+    width: auto;
+    cursor: pointer;
+}
+
+
+select.language-detection option {
+    outline: none;
+    border: none;
+    background-color: #5a5f67;
+}
+
+
+#label-detect {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 600;
+    color: #4D5562;
+    font-size: 16px;
+    position: relative;
+    left: 6%;
+    padding-right: 9%
+}
+
+.drop-down-container {
+    display: flex;
+    align-items: center;
+    height: 20%;
+}
+
+.counter {
+    display: flex;
+    width: 100%;
+    justify-content: right;
+    flex: 2;
+    position: relative;
+    right: 5%;
+    bottom: 2%;
+    color: #CDD5E0;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 600;
+}
+
+.button-container-2 {
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+    width: 80%;
+    padding-left: 4.24%;
+    height: 20%;
+}
+
+#translatedText {
+    height: 50%;
+    width: 80%;
+    padding-bottom: 200px;
+    background: none;
+    border-style: none;
+    font-family: "DM Sans", sans-serif;
+    font-weight: bold;
+    color: #F9FAFB;
+    font-size: 25px;
+    resize: none;
+    overflow: hidden;
+}
+
+#translatedText:focus {
+    border: none;
+    outline: none;
+}
+
+.text-container-2 {
+    display: flex;
+    justify-content: left;
+    padding-left: 0;
+    top: 5%;
+    position: relative;
+    left: 6.2%;
+    height: 50%;
+}
